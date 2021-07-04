@@ -1,0 +1,43 @@
+/* 麵包屑 */
+.bread-crimbs-area{
+    padding: 110px 0 0 0;
+}
+.bread-crimbs{
+    display: flex;
+    margin-left: 30px;
+}
+.bread-crimbs li + li{
+    padding-left: 10px;
+}
+.bread-crimbs li + li:before{
+    content: '>';
+    display: inline;
+    color: #808080;
+    margin-left: -10px;
+    position: absolute;
+}
+.bread-crimbs li a{
+    font-size: 14px;
+    display: block;
+    color: #808080;
+    text-decoration: none;
+}
+.bread-crimbs li:last-child a,
+.bread-crimbs a:hover{
+    color: black;
+}
+
+@media screen and (min-width:768px){
+    .bread-crimbs li + li:before{
+        content: '>';
+        display: inline;
+        color: #808080;
+        margin-left: -9px;
+        position: absolute;
+    }
+}
+@media screen and (min-width:992px){
+    .bread-crimbs-area{
+        display: none;
+    }
+}

@@ -1,0 +1,37 @@
+*{
+  /* outline: 1px solid red;  */
+  box-sizing: border-box; 
+}
+.container-bg{
+    width: 100%;
+    margin: auto;
+    /* padding: 0px -15px; */
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC','Mukta Malar', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+    src: url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200;300;400;500;600;700;800&display=swap');
+    
+}
+.main-header, .service, .product{
+    max-width: 1200px;
+}
+.product-slider-txt ul li:nth-child(5){
+    letter-spacing: -1px;
+}
+
+/* 因表格內容較少，使手機板表格上下之間不要太貼。 */
+.product-norm th{
+    padding: 10px;
+}
+.product-norm td{
+    width: 70%;
+}
+.product-norm i{
+    /* 去掉偽類之後不要縮排。 */
+    text-indent: -10px;
+    margin-bottom: 0;
+}
+.product-norm td i::before{
+    content: " ";
+    display: none;
+}

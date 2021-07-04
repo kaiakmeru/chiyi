@@ -1,0 +1,111 @@
+* { box-sizing: border-box; }
+.container-bg{
+  width: 100%;
+  margin: auto;
+  font-family: 'Noto Sans TC','Mukta Malar', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+  src: url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200;300;400;500;600;700;800&display=swap');
+}
+.main-header, .service, .product, .banner-area p,
+.download-area{
+  max-width: 1200px;
+}
+.banner{
+  position: relative;
+}
+.banner-area{
+  width: 100%;
+  height: 346px;
+  overflow: hidden;
+}
+.banner-area img{
+    width: 100%;
+    position: relative;
+    top: -20px;
+}
+.banner-img-desk{
+  display: none;
+}
+.banner p{
+  font-size: 20px;
+  color: white;
+  letter-spacing: 3px;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+.download-area{
+  padding: 55px 20px;
+  line-height: 2em;
+}
+.download-area h2{
+  font-size: 30px;
+  font-weight: 600;
+  color: #808080;
+  margin-bottom: 10px;
+}
+.download-area ul{
+  list-style:disc;
+  padding: 0 0 0 20px;
+  margin-bottom: 30px;
+}
+.download-area a{
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #949494;
+}
+.download-area a:hover{
+  color: #0075b9;
+  background-color: #b7d8f8;
+}
+@media screen and ( min-width:992px ) {
+  .banner-area{
+    /* max-width: 1200px; */
+    height: 0;
+    padding-bottom: 28.833333%;
+  }
+  .banner-area img{
+    width: 100%;
+    top: 90px;
+  }
+  .banner-img-desk{
+    display: block;
+  }
+  .banner-img-mobo{
+    display: none;
+  }
+  .banner p{
+    font-size: 12px;
+    color: black;
+    text-align: left;
+    top: 45%;
+    left: 5%;
+    max-width: 1200px;
+  }
+
+}
+
+@media screen and ( min-width:1300px ) {
+
+  .banner p{
+    top: 40%;
+  }
+}
+
+@media screen and ( min-width:1400px ) {
+
+  .banner p{
+    top: 35%;
+  }
+}
+
+@media screen and ( min-width:1600px ) {
+  .banner p{
+    top: 30%;
+  }
+}

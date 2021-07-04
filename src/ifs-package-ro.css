@@ -1,0 +1,43 @@
+*{
+  /* outline: 1px solid red;  */
+  box-sizing: border-box; 
+}
+.container-bg{
+    width: 100%;
+    margin: auto;
+    /* padding: 0px -15px; */
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC','Mukta Malar', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+    src: url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200;300;400;500;600;700;800&display=swap');
+    
+}
+.main-header, .service, .product{
+    max-width: 1200px;
+}
+  /* product-down-pic */
+.product-down-pic{
+    padding: 0;
+}
+.product-cartridges .pic-items{
+    width: 200px;
+    padding: 0;
+    margin: 10px;
+    display: inline-block;
+    font-size: 0;
+}
+/* 手機板文字邊距 */
+.product-slider-txt{
+  margin: 20px;
+}
+@media screen and (min-width: 768px) {
+  /* 桌機版圖文對其 */
+  .product-slider-txt{
+      margin-left: 15%;
+  }
+  .product-slider-txt ul{
+      margin-left: 20px;
+  }
+}
+
+  

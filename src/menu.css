@@ -1,0 +1,306 @@
+/* menu */
+.header{
+    width: 100%;
+    height: 90px;
+    background-color: #0075b9;
+    position: fixed;
+    z-index: 2;
+}
+#menu-switch{
+    position: absolute;
+    display: none;
+}
+.main-header{
+    background-color: #0075b9;
+    width: 100%;
+    height: 90px;
+    margin: auto;
+}
+.main-header .logo{
+    width: 200px;
+    margin: auto;
+}
+.main-header .logo a{
+    display: block;
+    line-height: 0;
+}
+.main-header .logo img{
+    width: 100%;
+    /* 處理圖片基線問題 */
+    vertical-align: middle;
+}
+.drop-down-control-checkbox{
+    display: none;
+}
+.drop-down-control-label{
+    display: block;
+    width: 100%;
+    /* background-color: thistle; */
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.main-nav{
+    z-index: 30;
+}
+.main-nav a{
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.main-nav .drop-down-menu-items:nth-child(1)>a,
+.main-nav .drop-down-menu-items:nth-child(2)>a{
+    padding: 0;
+}
+@media screen and (max-width:991px){
+    
+    .main-header{
+        display: flex;
+        position: fixed;
+    }
+    .menu-control{
+        display: flex;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);  
+        right: 10%;
+        flex-wrap: wrap;
+        width: 36px;
+        height:36px;
+        padding: 3px;
+        box-sizing: border-box;
+    }
+    .menu-control span{
+          width: 100%;
+          height: 2px;
+          background-color: white;
+          margin: auto;
+    }
+    .main-nav{
+        width: 80%;
+        display: block;
+        height: 100vh;
+        overflow-y: auto;
+        /* opacity排版用，完稿後數值改回0。 */
+        opacity: 0;
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        padding: 1em;
+        padding-bottom: 200px;
+        box-sizing: border-box;
+        background-color:rgba(255, 255, 255, 1);
+        box-shadow: 3px 3px 10px 0px rgb(110, 110, 110);
+        transition: .9s;
+    }
+    .main-nav::-webkit-scrollbar {
+        width: 0px;
+    }
+    .drop-down-menu-items ul{
+        width: 80%;
+    }
+    .drop-down-menu>li>a{
+        width: 100%;
+        display: block;
+        color: #0075b9;
+    }
+    .drop-down-menu>li>label:hover,
+    .drop-down-menu>li>label.active{
+      background: #b7d8f8;
+    }
+    .drop-down-menu>li>a:hover,
+    .drop-down-menu>li>a.active{
+      background: #b7d8f8;
+    }
+    .tow-level-menu{
+        display: none;
+    }
+    .tow-level-menu>li{
+        width: 100%;
+    }
+    .tow-level-menu>li>a{
+        display: block;
+        width: 100%;
+        margin-left: 45px;
+    }
+    .tow-level-menu>li>a:hover,
+    .tow-level-menu>li>a.active{
+        background: #b7d8f8;
+        color: #949494;
+    }
+    #menu-switch:checked~.main-header .main-nav{
+        opacity: 1;
+        top: 100%;
+        left: 20%;
+        transition: .9s;
+    }
+    /* 第一層選單 */
+
+    /* 第二層選單 */
+    .drop-down-menu .tow-level-menu a{
+      color: #0075b9;
+      font-weight: 300;
+    }
+    /* 點擊下拉選單 */
+    .drop-down-menu-items .drop-down-control-label::after,
+    .drop-down-menu-items a::after{
+        /* height: 0; */
+        display: none;
+    }
+    #drop-down-first:checked~.tow-level-menu{
+        display: block;
+    }
+    #drop-down-second:checked~.tow-level-menu{
+        display: block;
+    }
+}
+@media screen and (min-width: 992px) {
+   
+    .main-header .logo{
+        margin: unset;
+        float: left;
+        transform: translateY(50%);
+    }
+    .main-nav{
+      float: left;
+      transform: translateY(50%); 
+      margin-top: -2px;
+    }
+    .main-nav::after,
+    .main-nav ul::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        clear: both;
+    }
+  
+    /* 第一層選單 */
+    .drop-down-menu>li>a{
+      color: white;
+    }
+    .drop-down-menu .drop-down-menu-items{
+      float: left;
+      position: relative;
+    }
+    .drop-down-menu .drop-down-menu-items::after{
+      content: '';
+      display: block;
+      height: 0;
+      clear: both;
+    }
+    .drop-down-control-label{
+        display: block;
+        width: 100%;
+        padding: 0px 0px;
+        cursor: pointer;
+    }
+    .main-nav .drop-down-menu-items:nth-child(1) a,
+    .main-nav .drop-down-menu-items:nth-child(2) a{
+        padding: 10px 20px;
+    }
+
+    .drop-down-menu li{
+        /* 使需要在空間內移動的a，具備定位父層。 */
+        position: relative;
+    }
+    .drop-down-menu-items a{
+        position: relative;
+        top: 3px;
+        color: white;
+        transition: .5s;
+    }
+    .drop-down-menu-items a::after{
+        content: '';
+        display: block;
+        width: 0%;
+        height: 1px;
+        background-color: #949494;
+        margin-top: 10px;
+        transition: .5s;
+    }
+    .drop-down-menu-items a:hover{
+        color: #949494;
+        top: -10px;
+        transition: .5s;
+    }
+    .drop-down-menu-items:hover.drop-down-menu-items>a::after{
+        width: 100%;
+        transition: .5s;
+    }
+    .drop-down-menu-items:hover.drop-down-menu-items>a{
+        color: #c9c9c9;
+        top: -10px;
+      }
+    .drop-down-menu li{
+        width: unset;
+    }
+    .drop-down-menu a {
+        display: block;
+        padding: 10px 20px;
+    }
+    .drop-down-menu .drop-down-control-label{
+        text-decoration: none;
+    }
+    .drop-down-menu .tow-level-menu{
+        /* 固定下拉選單排版用，完稿改回none */
+        display: none;
+        width: 162px;
+    }
+    .drop-down-menu .tow-level-menu a{
+        display: block;
+        padding: 10px 10px;
+    }
+    .drop-down-menu li:hover 
+    .tow-level-menu{
+        display: block;
+    }
+    .drop-down-menu .tow-level-menu:hover~.drop-down-menu>a{
+        top: -10px;
+    }
+
+    /* 第二層選單 */
+    .drop-down-menu ul{
+        position: absolute;
+        left: -30px;
+        top: 100%;
+        z-index: 2;
+        /* 選單垂直置中 */
+        text-align: center;
+        line-height: 1em;
+        background-color: white;
+        /* 去掉.drop-down-menu-items ul的影響。 */
+        padding: 10px 5px;
+        box-shadow: 0px 3px 10px 3px rgba(0, 0, 0, .1);
+    }
+    .drop-down-menu ul li{
+        width: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+    }
+    .drop-down-menu .tow-level-menu a{
+        font-size: 15px;
+        color: #868686;
+    }
+    .drop-down-menu li a{
+        width: unset;
+    }
+    .drop-down-menu ul li a::after{
+        content: '';
+        display: block;
+        width: 0%;
+        height: 1px;
+        background-color: #e50038;
+        transition: .5s;
+    }
+    .drop-down-menu ul li:hover a{
+        background: unset;
+        color: #e50038;
+        transition: .5s;
+    }
+    .drop-down-menu ul li:hover a::after{
+        width: 100%;
+        transition: .5s;
+    }
+
+}

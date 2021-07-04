@@ -1,0 +1,80 @@
+/* 濾材表 */
+.product-cartridges h3{
+    font-size: 20px;
+}
+.product-cartridges span{
+    padding: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.product-cartridges ul{
+    margin-left: 6px;
+}
+.product-cartridges .filter-first{
+    background-color: #F9CCA7;
+}
+.product-cartridges .filter-second{
+    background-color: #C5E4FA;
+}
+.product-cartridges .filter-third{
+    background-color: #E1E1E1;
+}
+.product-cartridges .filter-fourth{
+    background-color: #D7EDC6;
+}
+.product-cartridges .filter-fifth{
+    background-color: #CCCAEA;
+}
+.product-cartridges p{
+    margin-bottom: 12px;
+}
+
+/* product-down-pic */
+.product-down-pic{
+    padding: 20px 0;
+}
+.product-cartridges .pic-items{
+    width: 320px;
+    padding: 20px;
+    display: inline-block;
+    font-size: 0;
+}
+.product-cartridges img{
+    width: 100%;
+}
+.product-cartridges .pic-items-txt p{
+    /* width: 50%; */
+    font-size: 16px;
+    padding: 10px;
+    margin: 20px;
+    color: white;
+    background-color: #0075b9;
+    border-radius: 5px;
+}
+@media screen and (min-width:768px) {
+    /* 電腦版float-left設定 */
+    /* .product-cartridges ul{
+        margin-left: 20px;
+    }
+    .product-cartridges span,
+    .product-cartridges p{
+        float: left;
+    }
+    .product-cartridges li::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .product-cartridges span{
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .product-cartridges p{
+        padding: 5px;
+    } */
+    .product-cartridges ul{
+        margin-left: 20px;
+    }
+}
+@media screen and (min-width: 992px) {}
+@media screen and (min-width: 1200px) {}

@@ -1,0 +1,33 @@
+/* 配件 */
+.components{
+    padding: 20px;
+}
+.components h3{
+    font-size: 20px;
+    color: #868686;
+    padding: 27px 0;
+}
+.components div{
+    /* width: 435px; */
+    width: 100%;
+}
+.components-pic img{
+    width: 100%;
+}
+@media screen and (min-width:768px){
+    /* 配件 */
+    .components{
+        padding: 0;
+    }
+    .components div{
+        width: 46%;
+        max-width: 330px;
+        border: 1px solid #ccc;
+        margin-left: 22px;
+    }
+    .components-pic img{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 992px) {}
+@media screen and (min-width: 1200px) {}

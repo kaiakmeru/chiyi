@@ -1,0 +1,106 @@
+/* 產品規格表 --------------------*/
+.product-td-area{
+    color: #868686;
+    padding: 20px;
+}
+.product-td-area h3{
+    width: 100%;
+    font-size: 20px;
+    padding: 27px 0;
+}
+.product-td-area .td-dismantle-title{
+    text-indent: 15px;
+}
+.product-norm table{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.product-norm caption{
+    text-align: left;
+    color: white;
+    background-color: #0075b9;
+    border-radius: 7px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.product-norm tr{
+    border-style: inset;
+    border: 1px solid black;
+}
+.product-norm th{
+    width: 20%;
+    border-style: inset;
+    vertical-align: middle;
+    padding: 10px;
+    background-color:white;
+    border: 1px solid black;
+}
+/* .product-norm .td-title{
+    text-align: left;
+    background-color: #0075b9;
+    border-radius: 7px;
+    border: 1px solid #0075b9;
+} */
+.product-norm td{
+    vertical-align: middle;
+    padding: 10px;
+    padding-right: 0;
+}
+
+.product-td-area .td-share{
+    width: 100%;
+    line-height: 2em;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+}
+.product-td-area .td-share li{
+    padding-bottom: 10px;
+}
+.product-td-area .td-share li+li{
+    border-top: 1px solid black;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+.product-td-area i{
+    display: block;
+    line-height: 1.2em;
+    /* margin-left: 15px; */
+}
+/* 清單前圓點>>>個別調整 */
+/* .td-share i::before{
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #868686;
+    transform: translateY(-50%);
+    margin: 0 5px;
+} */
+@media screen and (max-width:360px){
+    .product-norm th{
+        padding: 5px;
+    }
+}
+@media screen and (min-width:768px){
+    
+    .product-td-area{
+        padding: 0;
+    }
+    .product-norm table{
+        margin-left: 15px;
+    }
+    .product-td-area .td-share{
+        margin: 0;
+        margin-left: 30px;
+    }
+
+}
+@media screen and (min-width: 992px) {
+    .product-td-area .td-share{
+        width: 70%;
+    }
+}
+@media screen and (min-width: 1200px) {}

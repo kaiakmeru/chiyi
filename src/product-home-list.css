@@ -1,0 +1,85 @@
+/* ro機清單 */
+
+.product-list{
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+.product-list .container{
+    display: flex;
+    flex-direction: row-reverse;
+    direction: ltr;
+}
+.product-list .row img{
+    width: 100%;
+    vertical-align: middle;
+}
+.product-list ul{
+    text-align: center;
+    line-height: 1.5em;
+}
+.product-list li{
+    transition: .5s;
+}
+.product-list li a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    padding: 20px 0;
+}
+.product-list li a h2{
+    font-size: 4vw;
+    line-height: 1.5em;
+}
+.product-list li a em{
+    font-size: 3.5vw;
+    line-height: 1.5em;
+}
+.product-txt-area{
+    line-height: 1em;
+    margin: auto;
+    padding: 5px 0;
+    color: rgb(120, 120, 120);
+    transition: .5s;
+}
+.product-list li:hover .product-txt-area{
+    color: rgb(40, 40, 40);
+    background-color: #ccc;
+    border-radius: 10px;
+    transition: .5s;
+}
+.product-list li:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+@media screen and (min-width:768px){
+    
+    .product-list li a h2{
+        font-size: 14px;
+        line-height: unset;
+    }
+    .product-list li a em{
+        font-size: 12px;
+        line-height: unset;
+    } 
+    .product-txt-area{
+        width: 80%;
+    }
+    .product-list li:hover .product-txt-area{
+        width: 100%;
+    }
+}
+@media screen and (min-width:992px){
+    .product-list{
+        padding-top: 140px;
+        padding-bottom: 0;
+    }
+}
+@media screen and (min-width:1131px){
+    /* ro機清單 */
+    
+    .product-list .row{
+        max-width: 960px;
+    }
+}

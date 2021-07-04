@@ -1,0 +1,186 @@
+* {
+  /* outline: 1px solid red;  */
+  box-sizing: border-box; 
+}
+.container-bg{
+  width: 100%;
+  margin: auto;
+  font-family: 'Noto Sans TC','Mukta Malar', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+  src: url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200;300;400;500;600;700;800&display=swap');
+}
+.main-header, .service, .product{
+  max-width: 1200px;
+}
+.banner{
+  padding-top: 90px;
+  height: 424px;
+  position: relative;
+  overflow: hidden;
+}
+.banner-area img{
+  width: 100%;
+}
+.banner-img-desk{
+  display: none;
+}
+.banner-img-mobo{
+  width: 100%;
+}
+.banner-area-txtpapa{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.banner-area-txt{
+  width: 100%;
+  padding: 20px;
+}
+.banner em{
+  display: inline-block;
+  text-align: left;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 1.2em;
+  color: white;
+  margin-bottom: 10px;
+}
+.banner p{
+  font-size: 15px;
+  line-height: 1.4em;
+  color: white;
+}
+/* online shop */
+.online-shop{
+  width: 100%;
+  padding: 40px 0;
+}
+.online-shop ul{
+  padding: 0 10px;
+}
+.online-shop li{
+  padding: 10px;
+}
+.online-shop li img{
+  display: block;
+  width: 100%;
+  outline: 2px solid #ffffff;
+  transition: .5s;
+}
+.online-shop li:hover img{
+  outline: 2px solid #0075b9;
+  transition: .5s;
+}
+
+.online-shop a{
+  display: block;
+  width: 100%;
+  position: relative;
+  transition: .5s;
+}
+.online-shop li:hover a{
+  transform: scale(1.1,1.1);
+  transition: .5s;
+}
+
+@media screen and (min-width:460px){
+  
+  .banner-area-txt{
+    width: 60%;
+    padding: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+}
+
+@media screen and (min-width:768px){
+  
+  .banner-area-txt{
+    width: 60%;
+    padding: 20px;
+  }
+  .banner em{
+    display: inline-block;
+    font-size: 40px;
+    line-height: 1.3em;
+    color: white;
+    margin-bottom: 10px;
+  }
+  .banner p{
+    font-size: 20px;
+  }
+  
+  /* online-shop */
+
+  .online-shop{
+    width: 85%;
+    padding: 60px 0;
+  }
+  .online-shop li{
+    padding: 20px;
+  }
+
+}
+@media screen and ( min-width:992px ) {
+  .banner{
+    height: 0;
+    padding-bottom: 20.833333%;
+    /* overflow: visible; */
+  }
+  .banner-area{}
+  .banner-img-mobo{
+    display: none;
+  }
+  .banner img{
+      width: 100%;
+  }
+  .banner-img-desk{
+    display: block;
+  }
+  .banner-area-txtpapa{
+    width: 65%;
+    position: absolute;
+    top:50%;
+    right: 50%;
+    transform: translate(50%, -30%);
+  }
+  .banner-area-txt{
+    width: 70%;
+    padding: 20px;
+  }
+  .banner em{
+    display: inline-block;
+    font-size: 45px;
+    line-height: 1.3em;
+    color: white;
+    margin-bottom: 10px;
+  }
+  .banner p{
+    font-size: 20px;
+  }
+
+  /* online-shop */
+
+  .online-shop{
+    width: 75%;
+    max-width: 1000px;
+    padding: 60px 0;
+    margin: auto;
+  }
+  .online-shop li{
+    padding: 20px;
+  }
+
+}
+
+@media screen and ( min-width:1200px ) {
+  .banner-area-txtpapa{
+    width: 100%;
+    transform: translate(28%, -30%);
+  }
+}

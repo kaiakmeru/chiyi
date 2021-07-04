@@ -1,0 +1,58 @@
+/* 產品規格表 --------------------*/
+.product-td-area{
+    color: #868686;
+    padding: 10px;
+}
+.product-td-area h3{
+    font-size: 20px;
+    padding: 27px 0;
+}
+.product-norm table{
+    width: 100%;
+}
+.product-norm tr{
+    border-style: inset;
+    border: 1px solid black;
+}
+.product-norm th{
+    width: 30%;
+    vertical-align: middle;
+    color: white;
+    background-color: #0075b9;
+    border: 2px solid white;
+    border-radius: 7px;
+}
+.product-norm td{
+    vertical-align: middle;
+    padding: 10px;
+}
+.product-norm i{
+    display: block;
+    line-height: 1.8em;
+    margin-left: 15px;
+    margin-bottom: 8px;
+    text-indent:-15px;
+}
+.product-norm td i::before{
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #868686;
+    transform: translateY(-50%);
+    margin: 0 5px;
+}
+@media screen and (max-width:360px){}
+@media screen and (min-width:768px){
+    
+    .product-td-area{
+        padding: 0;
+    }
+    .product-norm table{
+        margin-left: 15px;
+    }
+
+}
+@media screen and (min-width: 992px) {}
+@media screen and (min-width: 1200px) {}

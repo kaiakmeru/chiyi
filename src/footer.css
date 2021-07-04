@@ -1,0 +1,529 @@
+*{
+  /* outline: 1px solid red; */
+}
+
+/* contecUs、map */
+
+.contectUs{
+  width: 100%;
+  margin: auto;
+  padding-top: 55px;
+}
+.contectUs .contectUs-title{
+  width: 100%;
+  max-width: 1200px;
+  font-size: 20px;
+  line-height: 47px;
+  padding-left: 27px;
+  margin: auto;
+}
+.contectUs-map{
+  width: 96.666666%;
+  max-width: 1200px;
+  height: 0;
+  padding-bottom:60%;
+  position: relative;
+  margin: auto;
+  margin-bottom: 27px;
+}
+.contectUs-map iframe{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.contectUs-area-bg{
+  background-color: #4d4d4d;
+}
+
+@media screen and (max-width:439px){
+  .contectUs-area{
+    color: white;
+    padding: 20px;
+    padding-bottom: 0;
+  }
+  .contectUs-area-txt{
+    float: none;
+    letter-spacing: 2px;
+    margin: 20px 10px;
+  }
+  .contectUs-area .times strong,
+  .contectUs-area .call strong,
+  .contectUs-area .fax strong,
+  .contectUs-area .address strong,
+  .contectUs-area .email strong
+  {
+    float: left;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .contectUs-area .times{
+    margin-bottom: 10px;
+  }
+  .contectUs-area .times-txt{
+    float: left;
+    margin-left: 0px;
+  }
+  .contectUs-area .day{
+    margin-top: -2px;
+    margin-bottom: 5px;
+  }
+  .contectUs-area .times strong::after,
+  .contectUs-area .times-txt::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+  }
+  .contectUs .call{
+    width: 150px;
+    float: left;
+    margin-right: 10px;
+  }
+  .contectUs .call::after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    clear: both;
+  }
+  .contectUs-area .call p,
+  .contectUs-area .fax p,
+  .contectUs-area .address p{
+    margin-left: 30px;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Mukta Malar', sans-serif;
+  }
+  .contectUs-area .address p{
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+  .contectUs-area .email p{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Mukta Malar', sans-serif;
+  }
+  .contectUs-area .day p:nth-of-type(1){
+    display: inline-block;
+    font-size: 14px;
+    position: relative;
+  }
+  .contectUs-area .day p:nth-of-type(1)::after{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 110%;
+  }
+  .contectUs-area .day p:nth-of-type(2){
+    display: inline-block;
+    margin-left: 40px;
+    font-size: 14px;
+    position: relative;
+  }
+  .contectUs-area .hours{
+    margin-left: 0;
+  }
+  .contectUs-area .hours p:nth-of-type(1){
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Mukta Malar', sans-serif;
+    position: relative;
+  }
+  .contectUs-area .hours p:nth-of-type(1)::after{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 110%;
+  }
+  .contectUs-area .hours p:nth-of-type(2){
+    display: inline-block;
+    margin-left: 38px;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Mukta Malar', sans-serif;
+  }
+  .contectUs-area-txt::after,
+  .contectUs-area .business::after,
+  .contectUs-area .times::after,
+  .contectUs-area .call::after,
+  .contectUs-area .fax::after,
+  .contectUs-area .address::after,
+  .contectUs-area .email::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+  }
+  .contectUs-area-pic{
+    text-align: center;
+  }
+  .contectUs-area-pic p{
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 300;
+    font-family: 'Noto Sans TC', sans-serif;
+    padding-bottom: 20px;
+  }
+  .contectUs-area-pic img{
+    width: 100px;
+    height: 100px;
+  }
+  .copy-right{
+    text-align: center;
+    color: white;
+    padding: 20px 20px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Mukta Malar', sans-serif;
+  }
+}
+
+@media screen and (min-width:440px){
+
+  .contectUs-area{
+    max-width: 768px;
+    color: white;
+    margin: auto;
+    padding: 20px ;
+    padding-bottom: 0;
+  }
+  .contectUs-area-txt{
+    float: left;
+    letter-spacing: 2px;
+    margin-left: calc(50% - 200px);
+  }
+  .contectUs-area .business{
+    padding-bottom: 7px;
+  }
+  .contectUs-area .times strong,
+  .contectUs-area .call strong,
+  .contectUs-area .fax strong,
+  .contectUs-area .address strong,
+  .contectUs-area .email strong
+  {
+    float: left;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin-bottom: 10px;
+  }
+  .contectUs-area .email strong{
+    font-size: 14px;
+  }
+  .contectUs-area .day{
+    display: inline-block;
+    margin-left: 42px;
+  }
+  .contectUs-area .call p,
+  .contectUs-area .fax p,
+  .contectUs-area .address p{
+    display: inline-block;
+    margin-left: 75px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    font-family: 'Mukta Malar', sans-serif;
+  }
+  .contectUs-area .address p{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+  .contectUs-area .email p{
+    display: inline-block;
+    margin-left: 55px;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Mukta Malar', sans-serif;
+  }
+  .contectUs-area .day p:nth-of-type(1){
+    float: left;
+    font-size: 14px;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  .contectUs-area .day p:nth-of-type(1)::after{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 109%;
+  }
+  .contectUs-area .day p:nth-of-type(2){
+    display: inline-block;
+    margin-left: 42px;
+    font-size: 14px;
+    position: relative;
+    top: -2px;
+  }
+  .contectUs-area .hours{
+    margin-left: 106px;
+  }
+  .contectUs-area .hours p:nth-of-type(1){
+    float: left;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Mukta Malar', sans-serif;
+    position: relative;
+  }
+  .contectUs-area .hours p:nth-of-type(1)::after{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 105%;
+  }
+  .contectUs-area .hours p:nth-of-type(2){
+    display: inline-block;
+    margin-left: 38px;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Mukta Malar', sans-serif;
+    position: relative;
+    top: 0px;
+  }
+  .contectUs-area-txt::after,
+  .contectUs-area .times::after,
+  .contectUs-area .call::after,
+  .contectUs-area .fax::after,
+  .contectUs-area .address::after,
+  .contectUs-area .email::after,
+  .contectUs-area .hours p:nth-of-type(1)::after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .contectUs-area-pic{
+    text-align: center;
+  
+  }
+  .contectUs-area-pic p{
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 300;
+    font-family: 'Noto Sans TC', sans-serif;
+    padding-top: 190px;
+    padding-bottom: 20px;
+  }
+  .contectUs-area-pic img{
+    width: 100px;
+    height: 100px;
+  }
+  .copy-right{
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 27px 0;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Mukta Malar', sans-serif;
+  }
+}
+
+@media screen and (min-width:760px){
+  
+  /* contectUs */
+.contectUs-area-bg{
+  background-color: white;
+}
+  .contectUs-area{
+    color: #4d4d4d;
+    width: 725px;
+    padding-top: 20px;
+    border-top: 1px solid #4d4d4d;
+  }
+  .contectUs-area-txt{
+    margin-left: 0;
+  }
+  .business{
+    padding: 0;
+    margin: 0;
+  }
+  .contectUs-area .times strong,
+  .contectUs-area .call strong,
+  .contectUs-area .fax strong,
+  .contectUs-area .address strong,
+  .contectUs-area .email strong
+  {
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+  .contectUs-area .email strong{
+    font-size: 14px;
+  }
+  .contectUs-area .day{
+    margin-left: 41px;
+  }
+  .contectUs-area .call,
+  .contectUs-area .fax{
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .contectUs-area .call p,
+  .contectUs-area .fax p,
+  .contectUs-area .address p{
+    font-size: 16px;
+  }
+  .contectUs-area .address{
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .contectUs-area .address p{
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .contectUs-area .email p{}
+  .contectUs-area .day p:nth-of-type(1){
+    font-size: 14px;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  .contectUs-area .day p:nth-of-type(1)::after{
+    top: 50%;
+    left: 110%;
+    background-color: #4d4d4d;
+  }
+  .contectUs-area .day p:nth-of-type(2){
+    margin-left: 40px;
+    font-size: 14px;
+    top: -3px;
+  }
+  .contectUs-area .hours{
+    margin-left: 107px;
+  }
+  .contectUs-area .hours p:nth-of-type(1){
+    float: left;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Mukta Malar', sans-serif;
+    position: relative;
+  }
+  .contectUs-area .hours p:nth-of-type(1)::after{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 1px;
+    background-color: #4d4d4d;
+    position: absolute;
+    top: 50%;
+    left: 105%;
+  }
+  .contectUs-area .hours p:nth-of-type(2){
+    display: inline-block;
+    margin-left: 38px;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Mukta Malar', sans-serif;
+  }
+  .contectUs-area-pic{
+    float: right;
+    font-size: 0;
+    
+  }
+  .contectUs-area-pic::after,
+  .contectUs-area::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+  }
+  .contectUs-area-pic p{
+    padding-top: 0px;
+  }
+  .copy-right{
+    color: #4d4d4d;
+    font-weight: 400;
+  }
+}
+@media screen and (min-width:768px){
+  .contectUs-map{
+    padding-bottom: 25.862068%;
+  }
+  .contectUs-area .day{
+    margin-left: 39px;
+  }
+  .contectUs-area .hours{
+    margin-left: 109px;
+  }
+  .contectUs-area .hours p:nth-of-type(1){
+    float: left;
+    font-size: 19px;
+    font-weight: 300;
+    font-family: 'Mukta Malar', sans-serif;
+    position: relative;
+  }
+  .contectUs-area .hours p:nth-of-type(1)::after{
+    width: 30px;
+    left: 105%;
+  }
+  .contectUs-area .hours p:nth-of-type(2){
+    margin-left: 38px;
+    font-size: 19px;
+  }
+  .contectUs-area .call p,
+  .contectUs-area .fax p{
+    font-size: 18px;
+    margin-top: -2px;
+  }
+  .contectUs-area .address p{
+    margin-top: -2px;
+  }
+  .contectUs-area .email p{
+    margin-left: 58px;
+  }
+  .contectUs-area{
+    padding-bottom: 0;
+  }
+  .contectUs-area-txt{
+    margin: 0px;
+  }
+  .copy-right{
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+
+}
+@media screen and (min-width:920px){
+
+  .contectUs-area .day{
+    margin-left: 40px;
+  }
+  .contectUs-area .hours{
+    margin-left: 108px;
+  }
+  .contectUs-area .email p{
+    margin-left: 57px;
+  }
+}
+@media screen and ( min-width: 1200px){}
+

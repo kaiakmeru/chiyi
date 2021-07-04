@@ -1,0 +1,45 @@
+
+/* 實境照 */
+.scenes{
+    padding: 30px;
+}
+.scenes div{
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+}
+.scenes h3{
+    font-size: 20px;
+    color: #868686;
+    padding: 27px 0;
+}
+.scenes-pic{}
+.scenes-pic img{
+    width: 100%;
+}
+.scenes-pic-front{
+    margin-bottom: 30px;
+}
+@media screen and (min-width:768px){
+    /* 實境照 */
+    .scenes{
+        padding: 20px; 
+        font-size: 0;
+    }
+    .scenes div{
+        width: 40%;
+        max-width: 300px;
+        display: inline-block;
+        font-size: 0;
+        margin-left: 22px;
+    }
+    .scenes-pic{}
+    .scenes-pic img{
+        width: 100%;
+    }
+    .scenes-pic-front{
+        margin-right: 5%;
+    }
+}
+@media screen and (min-width: 992px) {}
+@media screen and (min-width: 1200px) {}

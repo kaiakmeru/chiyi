@@ -1,0 +1,585 @@
+* {
+  /* outline: 1px solid red;  */
+  box-sizing: border-box; 
+}
+.container-bg{
+  width: 100%;
+  margin: auto;
+  font-family: 'Noto Sans TC','Mukta Malar', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+  src: url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200;300;400;500;600;700;800&display=swap');
+  position: relative;
+}
+.main-header, .service, .product{
+  max-width: 1200px;
+}
+
+/* banner */
+
+/*! Flickity v2.2.1
+https://flickity.metafizzy.co
+---------------------------------------------- */
+.banner{
+  padding: 10px 20px 10px  20px;
+}
+.banner .carousel {
+  margin: auto;
+}
+.banner .carousel-cell {
+  width: 100%;
+  height: 0;
+  padding-bottom: 120%;
+  margin-right: 10px;
+  background: none;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+/* .carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+} */
+
+.banner .carousel-cell-image-920{
+  display: none;
+}
+.banner .carousel-cell-image-480{
+  display: block;
+  width: 100%;
+}
+.carousel.is-fullscreen .carousel-cell-image-480{
+  /* width: 100%; */
+}
+.banner .flickity-enabled{
+  position: relative;
+}
+.banner .flickity-enabled:focus{ outline: none; }
+.banner .flickity-viewport{
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+.banner .flickity-slider{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* ---- draggable ---- */
+
+.banner .flickity-enabled.is-draggable{
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.banner .flickity-enabled.is-draggable .flickity-viewport{
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.banner .flickity-enabled.is-draggable .flickity-viewport.is-pointer-down{
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+/* ---- flickity-button ---- */
+
+.banner .flickity-button{
+  display: none;
+  position: absolute;
+  background: hsla(0, 0%, 100%, 0.75);
+  border: none;
+  color: #333;
+}
+.banner .flickity-button:hover{
+  background: white;
+  cursor: pointer;
+}
+.banner .flickity-button:focus{
+  outline: none;
+  box-shadow: 0 0 0 5px #19F;
+}
+.banner .flickity-button:active{
+  opacity: 0.6;
+}
+.banner .flickity-button:disabled{
+  opacity: 0.3;
+  cursor: auto;
+  /* prevent disabled button from capturing pointer up event. #716 */
+  pointer-events: none;
+}
+.banner .flickity-button-icon{
+  fill: currentColor;
+}
+
+/* ---- previous/next buttons ---- */
+
+.banner .flickity-prev-next-button{
+  top: 50%;
+  /* 手機板不要左右箭頭擋住畫面 */
+  /* width: 44px; */
+  /* height: 44px; */
+  /* border-radius: 50%; */
+  /* vertically center */
+  transform: translateY(-50%);
+}
+.banner .flickity-prev-next-button.previous{ left: 10px; }
+.banner .flickity-prev-next-button.next{ right: 10px; }
+/* right to left */
+.banner .flickity-rtl .flickity-prev-next-button.previous {
+  left: auto;
+  right: 10px;
+}
+.banner .flickity-rtl .flickity-prev-next-button.next {
+  right: auto;
+  left: 10px;
+}
+
+.banner .flickity-prev-next-button .flickity-button-icon {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+}
+
+/* ---- page dots ---- */
+
+.banner .flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  /* bottom: -25px; >>>原數值在圖片之外 */
+  bottom: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+.banner .flickity-rtl .flickity-page-dots { direction: rtl; }
+.banner .flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 6px;
+  background: #333;
+  border-radius: 50%;
+  opacity: 0.25;
+  cursor: pointer;  
+}
+.banner .flickity-page-dots .dot.is-selected {
+  opacity: 1;
+}
+
+/* service */
+
+.service{
+  line-height: 0;
+  font-size: 0;
+  padding: 10px;
+  margin: auto;
+}
+.service-items a{
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.service-items a::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 116, 185, .4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: .5s;
+}
+.service-items a:hover::after{
+  background-color: rgba(147, 30, 53, 1);
+  transition: .5s;
+}
+.service-items{
+  position: relative;
+  margin-bottom: 3.333333%;
+}
+.service-items a h2{
+  width: 100%;
+  text-align: center;
+  font-size: 4vw;
+  font-weight: 800;
+  line-height: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+  margin: auto;
+  color: white;
+  z-index: 1;
+}
+.service-items a .icon{
+  width: 42%;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
+.service-items img{
+  width: 100%;
+}
+
+/* peoduct */
+
+.product{
+  width: 100%;
+  padding: 40px 0;
+}
+.product h2{
+  text-align: center;
+  font-size: 6vw;
+  color: #f9bf11;
+  position: relative;
+  margin-bottom: 25px;
+}
+.product h2::after{
+  content: '';
+  display: block;
+  width: 100px;
+  height: 35px;
+  background-color: #f6f6f6;
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+}
+.product ul{
+  padding: 0 10px;
+}
+.product li{
+  padding: 10px;
+}
+.product li img{
+  display: block;
+  width: 100%;
+  box-shadow: 0px 0px 0px 0px rgba(204, 204, 204,0);
+  transition: .5s;
+}
+.product li:hover img{
+  box-shadow: 3.5px 3.5px 8px 0px rgba(204,204,204,1);
+  transition: .5s;
+}
+.product li .img-mask::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  background: linear-gradient(116deg, transparent 40px, #fff 0) top left;
+	            /* linear-gradient(-135deg, transparent 15px, lightblue 0) top right, */
+	            /* linear-gradient(-45deg, transparent 15px, lightblue 0) bottom right, */
+	            /* linear-gradient(45deg, transparent 15px, lightblue 0) bottom left; */
+  /* background-size: 50% 50%; */
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: .5s;
+}
+.product li:hover .img-mask::after{
+  opacity: .7;
+  transition: .5s;
+}
+.product a{
+  display: block;
+  width: 100%;
+  position: relative;
+  transition: .5s;
+}
+.product li:hover a{
+  transform: scale(1.1,1.1);
+  transition: .5s;
+}
+.product h3{
+  width: 70%;
+  font-size: 4vw;
+  font-weight: 600;
+  line-height: 1.3em;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);  
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+  background-color: rgba(0, 116, 185, .6);
+  border-radius: 5px;
+}
+.product li:hover h3{
+  width: 100%;
+  transition: .5s;
+}
+.product span{
+  font-size: 2.5vw;
+  color: white;
+  position: absolute;
+  top: 4%;
+  left: 2.5%;
+}
+
+@media screen and (min-width:320px){
+  .product li .img-mask::after{
+    background: linear-gradient(116deg, transparent 25px, #fff 0) top left;
+  }
+}
+
+@media screen and (min-width:360px){
+
+  /* product */
+
+  .product h2{
+    font-size: 25px;
+  }
+  .product h2::after{
+    width: 150px;
+    height: 55px;
+  }
+  .product li .img-mask::after{
+    background: linear-gradient(116deg, transparent 33px, #fff 0) top left;
+  }
+} 
+
+@media screen and (min-width:430px){
+  
+  /* product */
+
+    .product li .img-mask::after{
+      background: linear-gradient(116deg, transparent 40px, #fff 0) top left;
+    }
+}
+
+@media screen and (min-width:540px){
+  
+  /* product */
+
+  .product li .img-mask::after{
+    background: linear-gradient(116deg, transparent 55px, #fff 0) top left;
+  }
+}
+
+@media screen and (min-width:768px){
+  
+  /* banner */
+  
+  .banner .carousel-cell{
+    padding-bottom: 31.1666666%;
+  }
+  .banner .carousel-cell-image-920{
+    display: block;
+    max-width: 100%;
+  }
+  .banner .carousel-cell-image-480{
+    display: none;
+  }
+
+  /* ---- banner按鈕控制 ---- */
+  .banner .flickity-button{
+    display: block;
+    background: white;
+    opacity: .3;
+  }
+  .banner .flickity-button:hover{
+    opacity: .7;
+    transition: .5s;
+  }
+  .banner .flickity-prev-next-button{
+    width: 30px;
+    height: 100%;
+    border-radius: 5px;
+  }
+  /* ---- icon color ---- */
+  .banner .flickity-button-icon {
+    /* fill: #003c87; */
+    fill: #0074b9;
+  }
+  /* ---- position outside ---- */
+  .banner .flickity-prev-next-button.previous{
+    left: 0px;
+  }
+  .banner .flickity-prev-next-button.next{
+    right: 0px;
+  }
+  .banner .product h2::before{
+    top: -14px;
+  }
+  .banner .contectUs-map{
+    padding-bottom: 16.666666%;
+  }
+  /* ---- page dots ---- */
+  .banner .flickity-page-dots .dot {
+    margin: 0 5px;
+  }
+  .flickity-viewport{
+    height: 0px !important;
+    padding-bottom: 25% !important; 
+  }
+
+  /* service */
+
+  .service{
+    width: 90%;
+  }
+  .service-items{
+    margin-bottom: 0;
+  }
+  .service-items a h2{
+    font-size: 2vw;
+    font-weight: 400;
+    bottom: 14%;
+  }
+  .service-items a .icon{
+    top: 10%;
+  }
+
+  /* product */
+
+  .product{
+    width: 85%;
+    padding: 60px 0;
+  }
+  .product li{
+    padding: 20px;
+  }
+  .product h2{
+    font-size: 25px;
+  }
+  .product h2::after{
+    width: 150px;
+    height: 60px;
+  }
+  .product h3{
+    width: 70%;
+    font-size: 2.5vw;
+    font-weight: 400;
+    background-color: rgba(112, 112, 112, 0.6);
+  }
+  .product li .img-mask::after{
+    background: linear-gradient(116deg, transparent 39px, #fff 0) top left;
+  }
+  .product span{
+    font-size: .5vw;
+    left: 2%;
+  }
+  
+}
+@media screen and (min-width:992px){
+
+  /* banner */
+
+  .banner{
+    width: 100%;
+    /* max-width: 1200px; */
+  }
+  .banner .carousel{
+    /* max-width: 1200px; */
+    margin: auto;
+  }
+  .banner .carousel-cell{
+    /* height: 0; */
+    /* padding-bottom: 31.1666666%; */
+  }
+  .banner .carousel-cell-image-920{
+    display: block;
+    /* max-width: 100%; */
+  }
+  .banner .carousel-cell-image-480{
+    display: none;
+  }
+  /* ---- page dots ---- */
+
+  .banner .flickity-page-dots .dot {
+    margin: 0 8px;
+  }
+  /* .flickity-viewport{
+    height: 0px !important;
+    padding-bottom: 20.833333% !important; 
+  } */
+
+
+  /* service */
+
+  .service{
+    width: 90%;
+    max-width: 1000px;
+  }
+  .service-items{
+    margin-bottom: 0;
+  }
+  .service-items a h2{
+    font-size: 2vw;
+    font-weight: 400;
+  }
+
+  /* product */
+
+  .product{
+    padding: 80px 0;
+    max-width: 1000px;
+  }
+  .product ul{
+    padding: 30px 0;
+  }
+  .product h2{
+    font-size: 35px;
+    margin-bottom: 0px;
+  }
+  .product h2::after{
+    width: 213px;
+    height: 77px;
+  }
+  .product h3{
+    width: 70%;
+    font-size: 25px;
+    font-weight: 400;
+    color:  rgba(255, 255, 255, 1);
+    top: 80%;
+    background-color: rgba(112, 112, 112, .3);
+    transition: .5s;
+  }
+  .product li:hover h3{
+    top: 50%;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(112, 112, 112, 0.6);
+  }
+  .product li .img-mask::after{
+    background: linear-gradient(116deg, transparent 52px, #fff 0) top left;
+  }
+  .product span{
+    font-size: .5vw;
+    left: 3%;
+  }
+}
+
+@media screen and ( min-width: 1200px ){
+  
+  /* service */
+
+    .service-items a h2{
+        font-size: 24px;
+    }
+}
+

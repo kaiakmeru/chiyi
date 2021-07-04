@@ -1,0 +1,63 @@
+/* 側邊欄 */
+aside{
+    display: none;
+    max-width: 1200px;
+    position: relative;
+}
+aside ul{
+    width: 15%;/* 側邊攔取消fix版本(為以後新增產品項目的擴充需求)，刪掉此行*/
+    max-width: 240px;
+    /* position: fixed; 原網頁*/
+    position: relative;
+    top: 150px;
+}
+aside ul::after{
+    content: '';
+    display: block;
+    width: 5px;
+    height: 42px;
+    position: absolute;
+    top: -110px;
+    left: 55px;
+    bottom: 0;
+    transform: matrix(1.1,0,-2.3,4.3,5,6);
+    z-index: -1;
+    background-color: rgb(229, 0, 56);
+}
+aside ul::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 30px;
+    position: relative;
+    top: -14px;
+    background-color: white;
+    box-shadow: 0px 0px 13px 0px rgba(180, 180, 180, .3);
+}
+aside li{
+    width: 130px;
+    margin-left: 38px;
+}
+aside a{
+    font-size: 16px;
+    display: inline-block;
+    text-decoration: none;
+    color: #868686;
+    padding: 15px 0;
+    transition: .5s;
+}
+aside li:hover a{
+    color: rgb(229, 0, 56);
+    padding-left: 10px;
+    transition: .5s;
+}
+
+@media screen and (min-width:768px) {}
+@media screen and (min-width: 1131px) {
+    
+  /* 側邊欄 */
+  aside{
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {}
