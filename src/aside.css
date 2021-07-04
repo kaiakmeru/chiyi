@@ -7,8 +7,8 @@ aside{
 aside ul{
     width: 15%;/* 側邊攔取消fix版本(為以後新增產品項目的擴充需求)，刪掉此行*/
     max-width: 240px;
-    /* position: fixed; 原網頁*/
-    position: relative;
+    position: fixed; 原網頁
+    /* position: relative; */
     top: 150px;
 }
 aside ul::after{
